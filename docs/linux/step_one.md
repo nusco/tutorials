@@ -61,7 +61,7 @@ weight = 1
         $ docker run -it ubuntu bash
 
         For more examples and ideas, visit:
-        http://docs.docker.com/userguide/
+        https://docs.docker.com/userguide/
   
 ## Where to go next
 

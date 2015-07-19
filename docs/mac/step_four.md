@@ -25,27 +25,27 @@ commands to run. Your recipe is going to be very short.
 
 If you don't already have a terminal open, open one now:
 
-1. Open the **Launchpad** and locate the Boot2Docker icon.
+1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
     ![Launchpad](/mac/images/applications_folder.png)
     
-2. Click the icon to launch a Boot2Docker terminal.
+2. Click the icon to launch a Docker Quickstart Terminal.
 
-4. Place your cursor at the prompt in the Boot2Docker terminal.
+3. Place your cursor at the prompt in the Docker Quickstart Terminal.
 
-3. Make a new directory by typing `mkdir mydockerbuild` and pressing RETURN.
+4. Make a new directory by typing `mkdir mydockerbuild` and pressing RETURN.
 
         $ mkdir mydockerbuild
         
    This directory serves as the "context" for your build. The context just means it contains all the things you need to build your image. 
 
-4. Change to your new directory.
+5. Change to your new directory.
 
         $ cd mydockerbuild
         
    Right now the directory is empty.
 
-5. Create a Dockerfile in the directory by typing `touch Dockerfile` and pressing RETURN.
+6. Create a Dockerfile in the directory by typing `touch Dockerfile` and pressing RETURN.
 
         $ touch Dockerfile
         
@@ -54,13 +54,13 @@ If you don't already have a terminal open, open one now:
         $ ls Dockerfile
         Dockerfile
     
-6. Now, type the `open -e Dockerfile` to open the file in Mac's TextEdit program.
+7. Now, type the `open -e Dockerfile` to open the file in Mac's TextEdit program.
     
     Your Mac opens the TextEdit program with the empty Dockerfile.
     
     ![Edit Dockerfile](/mac/images/text_edit.png)
 
-6. Type `FROM docker/whalesay:latest` line into the open file.
+8. Type `FROM docker/whalesay:latest` line into the open file.
 
     Now, it should look like this.
 
@@ -69,7 +69,7 @@ If you don't already have a terminal open, open one now:
 	  The `FROM` keyword tells Docker which image your image is based on. You
     are basing your new work on the existing `whalesay` image. 
 		
-7. Now, add the `fortunes` program to the image.
+9. Now, add the `fortunes` program to the image.
 
 	 ![Line two](/mac/images/line_two.png)
 	 
@@ -79,21 +79,21 @@ If you don't already have a terminal open, open one now:
 	 cryptic to you, don't worry. As long as you type the words correctly, they
 	 will work for you!
 	 
-8. Once the image has the software it needs, you instruct the software to run
+10. Once the image has the software it needs, you instruct the software to run
 when the image is loaded.
 
 	![Line two](/mac/images/line_three.png)
 
  	This line tells the `fortune` program to send its nifty quotes to the `cowsay` program.
 		
-9. Save your work and the Dockerfile by choosing **File > Save** from the TextEdit menu or by pressing CMD + S on your keyboard.
+11. Save your work and the Dockerfile by choosing **File > Save** from the TextEdit menu or by pressing CMD + S on your keyboard.
 
 	At this point, you have all your software ingredients and behaviors described
 	in a Dockerfile. You are ready to build a new image.
 	
 ## Step 2. Build an image from your Dockerfile
 
-1. Place your cursor back in your Boot2Docker terminal.
+1. Place your cursor back in your Docker Quickstart Terminal.
 
 
 2. Make sure the Dockerfile is in the current directory by typing `cat Dockerfile`
@@ -187,7 +187,7 @@ Finally, Docker finishes the build and reports its outcome.
 
 In this step, you verify the new images is on your computer and then you run your new image.
 
-1. If it isn't already there, place your cursor at the prompt in the Boot2Docker terminal window.
+1. If it isn't already there, place your cursor at the prompt in the Docker Quickstart Terminal window.
 
 2. Type `docker images` and press RETURN.
 

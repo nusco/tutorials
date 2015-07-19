@@ -11,15 +11,15 @@ weight = 3
 
 People all over the world create Docker images. You can find these images by browsing the Docker Hub. In this next section, you'll search for and find the image you'll use in the rest of this getting started.
 
-## Step 1: Open a Boot2Docker terminal 
+## Step 1: Open a Docker Quickstart Terminal 
 
 If you don't already have a terminal open, open one now:
 
-1. From the **Desktop** and locate the Boot2Docker icon.
+1. From the **Desktop** and locate the Docker Quickstart Terminal icon.
 
     ![Desktop](/windows/images/icon-set.png)
     
-2. Click the icon to launch a Boot2Docker terminal.
+2. Click the icon to launch a Docker Quickstart Terminal.
 
    Just leave the terminal open on your desktop, you'll be using it in a moment.
 
@@ -52,7 +52,7 @@ If you don't already have a terminal open, open one now:
     how to use it. You may notice that the **whalesay** image is based on a
     Linux distribution called Ubuntu. In the next step, you run the **whalesay** image on your machine.
 
-7. Put your cursor in your Boot2Docker terminal at the `$` prompt.
+7. Put your cursor in your Docker Quickstart Terminal at the `$` prompt.
 
 8. Type the `docker run docker/whalesay cowsay boo` command and press RETURN.
 
@@ -92,7 +92,7 @@ If you don't already have a terminal open, open one now:
 	on your local system. If the image isn't there, then `docker` gets it from
 	the hub.
 
-9. While still in the Boot2Docker terminal, type `docker images` command and press RETURN.
+9. While still in the Docker Quickstart Terminal, type `docker images` command and press RETURN.
 
     The command lists all the images on your local system. You should see
     `docker/whalesay` in the list.

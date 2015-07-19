@@ -19,8 +19,8 @@ Depending on your interest, the Docker documentation contains a wealth of inform
     <th class="tg-031e">Where to find it</th>
   </tr>
   <tr>
-    <td class="tg-031e">This getting started provided very basic essentials for using Docker on Windows. If you want to do more with Docker, you need to read the full installation and user guide for Boot2Docker.</td>
-    <td class="tg-031e"><a href="http://docs.docker.com/installation/windows/">Install and use Boot2Docker guide.</a></td>
+    <td class="tg-031e">This getting started provided very basic essentials for using Docker on Windows. If you want to do more with Docker, you need to read the full installation and user guide for Docker Toolbox.</td>
+    <td class="tg-031e"><a href="https://docs.docker.com/installation/windows/">Install and use Docker Toolbox guide.</a></td>
   </tr>
   <tr>
     <td class="tg-031e">Information about the Docker product line.</td>
@@ -29,7 +29,7 @@ Depending on your interest, the Docker documentation contains a wealth of inform
 
   <tr>
     <td class="tg-031e">Set up an automated build on Docker Hub.</td>
-    <td class="tg-031e"><a href="http://docs.docker.com/docker-hub/">The Docker Hub documentation.</a></td>
+    <td class="tg-031e"><a href="https://docs.docker.com/docker-hub/">The Docker Hub documentation.</a></td>
   </tr>
 </table>
 

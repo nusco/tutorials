@@ -41,15 +41,15 @@ People all over the world create Docker images. You can find these images by bro
     
 ## Step 2: Run the whalesay image
 
-If you don't already have the Boot2Docker terminal open, open one now:
+If you don't already have the Docker Quickstart Terminal open, open one now:
 
-1. Open the **Launchpad** and locate the Boot2Docker icon.
+1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
     ![Launchpad](/mac/images/applications_folder.png)
     
-2. Click the icon to launch a Boot2Docker terminal.
+2. Click the icon to launch a Docker Quickstart Terminal.
 
-3. Put your cursor in your Boot2Docker terminal at the `$` prompt.
+3. Put your cursor in your Docker Quickstart Terminal at the `$` prompt.
 
 4. Type the `docker run docker/whalesay cowsay boo` command and press RETURN.
 
@@ -89,7 +89,7 @@ If you don't already have the Boot2Docker terminal open, open one now:
 	on your local system. If the image isn't there, then `docker` gets it from
 	the hub.
 
-5. While still in the Boot2Docker terminal, type `docker images` command and press RETURN.
+5. While still in the Docker Quickstart Terminal, type `docker images` command and press RETURN.
 
     The command lists all the images on your local system. You should see
     `docker/whalesay` in the list.

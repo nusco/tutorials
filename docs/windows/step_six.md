@@ -17,13 +17,13 @@ new image.
 
 If you don't already have a terminal open, open one now:
 
-1. From the **Desktop** and locate the Boot2Docker icon.
+1. From the **Desktop** and locate the Docker Quickstart Terminal icon.
 
     ![Desktop](/windows/images/icon-set.png)
       
-2. Click the icon to launch a Boot2Docker terminal.
+2. Click the icon to launch a Docker Quickstart Terminal.
 
-3. Place your cursor at the prompt in the Boot2Docker terminal window.
+3. Place your cursor at the prompt in the Docker Quickstart Terminal window.
 
 4. Make sure you are in `testdocker` folder.
 
@@ -122,7 +122,7 @@ do that though, you'll need to remove the original image from your local
 machine. If you left the original image on your machine. Docker would not pull
 from the hub &mdash; why would it? The two images are identical.
 
-1. Place your cursor at the prompt in the Boot2Docker terminal window.
+1. Place your cursor at the prompt in the Docker Quickstart Terminal window.
 
 2. Make sure you are in `testdocker` folder.
 
