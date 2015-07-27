@@ -31,7 +31,7 @@ If you don't already have a terminal open, open one now:
 
 ## Step 2. Write a Dockerfile
 
-In this step, you use the Windows Notepad applicatin to write a short
+In this step, you use the Windows Notepad application to write a short
 Dockerfile. A Dockerfile describes the software elements that make up an
 image. It isn't just elements though, a Dockerfile can describe what environment
 to use or what commands to run in the container. Your Dockerfile is going to be very short.
@@ -46,7 +46,7 @@ to use or what commands to run in the container. Your Dockerfile is going to be 
 
         $ mkdir testdocker
         
-4. Change into the `tesetdocker` folder.
+4. Change into the `testdocker` folder.
 
         $ cd testdocker
 

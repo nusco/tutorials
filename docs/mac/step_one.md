@@ -104,7 +104,7 @@ In this step, you start Boot2Docker and run a simple Docker command.
     by a highlighted area or a `|` that appears in the command line. After
     typing a command, always press RETURN.
 
-4. Type the `docker run hello-world` commmand and press RETURN.
+4. Type the `docker run hello-world` command and press RETURN.
 
     The command does some work for you, if everything runs well, the command's
     output looks like this:
