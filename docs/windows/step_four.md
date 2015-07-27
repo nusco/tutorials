@@ -133,7 +133,7 @@ current directory, and builds an image called `docker-whale` on your local
 machine. The command takes about a minute and its output looks really long and
 complex. In this section, you learn what each message means.
 
-First Docker checks to make sure it has the everything it needs to build. 
+First Docker checks to make sure it has everything it needs to build. 
   
     Sending build context to Docker daemon 158.8 MB
 
