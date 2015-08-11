@@ -25,7 +25,7 @@ Depending on your interest, the Docker documentation contains a wealth of inform
 
   <tr>
     <td class="tg-031e">Set up an automated build on Docker Hub.</td>
-    <td class="tg-031e"><a href="http://docs.docker.com/docker-hub/">The Docker Hub documentation.</a></td>
+    <td class="tg-031e"><a href="https://docs.docker.com/docker-hub/">The Docker Hub documentation.</a></td>
   </tr>
 </table>
 

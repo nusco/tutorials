@@ -10,15 +10,14 @@ weight = 1
 # Install Docker for Windows
 
 Because Docker relies on Linux-specific features, you can't run Docker natively
-in Windows. Instead, you must install the Boot2Docker application. The
+in Windows. Instead, you must install the Docker Toolbox application. The
 application installs a VirtualBox Virtual Machine (VM), Docker itself, and the
-Boot2Docker management tool. These three things allow you to run Docker on
+Docker Toolbox management tool. These three things allow you to run Docker on
 Windows.
 
 ## Step 1: Check your version
 
-Your machine must be running Windows 7.1, 8/8.1 or newer to run Boot2Docker. 
-To find out what version of Windows you have:
+Your machine must be running Windows 7.1, 8/8.1 or newer to run Docker Toolbox. Windows 10 is not supported. To find out what version of Windows you have:
 
 1. Right click the windows message and choose **System*. 
 
@@ -45,26 +44,30 @@ target="_blank"> Microsoft® Hardware-Assisted Virtualization Detection Tool</a>
 and follow the on-screen instructions.
 
 
-## Step 2: Install Boot2Docker
+## Step 2: Install Docker Toolbox
 
-In this section, you install the Boot2Docker software and several "helper" applications. The installation adds the following software to your machine:
+In this section, you install the Docker Toolbox software and several "helper" applications. The installation adds the following software to your machine:
 
 * Docker Client for Windows
-* Boot2Docker management tool and ISO
+* Docker Toolbox management tool and ISO
 * Oracle VM VirtualBox 
 * Git MSYS-git UNIX tools
 
-If you have a previous version of VirtualBox installed, do not reinstall it with the Boot2Docker installer. When prompted, uncheck it.
+If you have a previous version of VirtualBox installed, do not reinstall it with the Docker Toolbox installer. When prompted, uncheck it.
 
-1. Click <a href="https://github.com/boot2docker/windows-installer/releases/download/v1.7.0/docker-install.exe" >to download the Boot2Docker for Windows installer</a>.
-   
-	  The browser downloads the installer to your machine. It can take about a
-    minute.
+If you have Virtual Box running, you must shut it down before running the
+installer. 
 
-3. Open the downloaded `docker-install.exe` file from your browser or by double-click the file itself.
+1. Go to the <a href="https://www.docker.com/toolbox" targe="_blank">Docker Toolbox</a> page.
+
+2. Click the installer link to download.
+
+3. Install Docker Toolbox by double-clicking the installer.
+
+    The installer launches the "Setup - Docker Toolbox" dialog.
     
     If Windows security dialog prompts you to allow the program to make a
-    change, choose **Yes**. The system displays the **Setup - Boot2Docker for
+    change, choose **Yes**. The system displays the **Setup - Docker Toolbox for
     Windows** wizard.
    
       ![Release page](/windows/images/installer_open.png)
@@ -72,8 +75,6 @@ If you have a previous version of VirtualBox installed, do not reinstall it with
 4. Press **Next** to accept all the defaults and then **Install**.
 
 	  Accept all the installer defaults. The installer takes a few minutes to install all the components:
-	  
-	   ![Release page](/windows/images/win_installing.png)
         
 5.  When notified by Windows Security the installer will make changes, make sure you allow the installer to make the necessary changes.
     
@@ -86,18 +87,18 @@ If you have a previous version of VirtualBox installed, do not reinstall it with
 
 ## Step 3. Verify your installation
 
-The installer places Boot2Docker and VirtualBox in your **Applications** folder.
-In this step, you start Boot2Docker and run a simple Docker command.
+The installer places Docker Toolbox and VirtualBox in your **Applications** folder.
+In this step, you start Docker Toolbox and run a simple Docker command.
 
-1. On your Desktop, find the Boot2Docker icon.
+1. On your Desktop, find the Docker Toolbox icon.
 
     ![Desktop](/windows/images/icon-set.png)
     
-2. Click the icon to launch a Boot2Docker terminal.
+2. Click the icon to launch a Docker Toolbox terminal.
 
     If the system displays a **User Account Control** prompt to allow VirtualBox to make changes to your computer. Choose **Yes**.
 
-    The terminal does several things to set up Boot2Docker for you. When it is done, the terminal displays the `$` prompt.
+    The terminal does several things to set up Docker Toolbox for you. When it is done, the terminal displays the `$` prompt.
     
      ![Desktop](/windows/images/b2d_shell.png)
      
@@ -141,12 +142,12 @@ In this step, you start Boot2Docker and run a simple Docker command.
          $ docker run -it ubuntu bash
 
         For more examples and ideas, visit:
-         http://docs.docker.com/userguide/
+         https://docs.docker.com/userguide/
 
 
 ## Where to go next
 
-At this point, you have successfully installed Docker. Leave the Boot2Docker
+At this point, you have successfully installed Docker. Leave the Docker Toolbox
 window open. Go to the next page to [read a very short introduction to Docker
 images and containers](/windows/step_two).
 
