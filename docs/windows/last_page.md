@@ -24,7 +24,7 @@ Depending on your interest, the Docker documentation contains a wealth of inform
   </tr>
   <tr>
     <td class="tg-031e">Information about the Docker product line.</td>
-    <td class="tg-031e"><a href="http:/www.docker.com/products">The product explainer is a good place to start.</a></td>
+    <td class="tg-031e"><a href="http://www.docker.com/products">The product explainer is a good place to start.</a></td>
   </tr>
 
   <tr>
