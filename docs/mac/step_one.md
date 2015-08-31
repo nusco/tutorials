@@ -24,7 +24,7 @@ attach to a Docker VM on your machine. This VM hosts Docker for you on your Mac.
 
 ## Step 1: Check your version
 
-Your Mac must be running OS X 10.6 "Snow Leopard" or newer to run Docker.
+Your Mac must be running OS X 10.8 "Mountain Lion" or newer to run Docker.
 To find out what version of the OS you have:
 
 1. Choose **About this Mac** from the Apple menu.
