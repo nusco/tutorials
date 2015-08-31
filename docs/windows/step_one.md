@@ -85,7 +85,7 @@ installer.
 6. Uncheck "View Shortcuts in File Explorer" and press **Finish**.
 
 
-## Step 3. Verify your installation
+## Step 3: Verify your installation
 
 The installer places Docker Toolbox and VirtualBox in your **Applications** folder.
 In this step, you start Docker Toolbox and run a simple Docker command.

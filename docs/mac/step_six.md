@@ -13,14 +13,14 @@ In this section, you tag and push your `docker-whale` image to your newly
 created repository. When you are done, you test the repository by pulling your
 new image.
 
-## Step 1: Tag and push the image 
+## Step 1: Tag and push the image
 
 If you don't already have a terminal open, open one now:
 
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
     ![Launchpad](/mac/images/applications_folder.png)
-    
+
 2. Click the icon to launch a Docker Quickstart Terminal.
 
 3. Place your cursor at the prompt in the Docker Quickstart Terminal window.
@@ -33,8 +33,8 @@ If you don't already have a terminal open, open one now:
         <none>               <none>       5dac217f722c        45 minutes ago      273.7 MB
         docker/whalesay      latest       fb434121fc77        4 hours ago         247 MB
         hello-world          latest       91c95931e552        5 weeks ago         910 B
-		
-5. Find the `IMAGE ID` for your `docker-whale` image. 
+
+5. Find the `IMAGE ID` for your `docker-whale` image.
 
 	In this example, the id is `7d9495d03763`.
 
@@ -46,9 +46,9 @@ If you don't already have a terminal open, open one now:
 6. Use `IMAGE ID` and the `docker tag` command to tag your `docker-whale` image.
 
     The command you type looks like this:
-    
+
      ![tagger](/tutimg/tagger.png)
-    
+
     Of course, your account name will be your own. So, you type the command with
     your image's ID and your account name and press RETURN.
 
@@ -64,39 +64,38 @@ If you don't already have a terminal open, open one now:
         docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
         hello-world                 latest    91c95931e552    5 weeks ago      910 B
 
-8. Type the `docker push` command to push your image to your new repository.
+8. Use the `docker login` command to log into the Docker Hub from the command line.
 
-	Docker prompts you to enter your username/password/email for Docker Hub. When
-	you type your password, the command line doesn't display the password text.
-	This is to protect your security.
-	
+    The format for the login command is:
+
+        docker login --username=yourhubusername --password=yourpassword --email=youremail@company.com
+
+    So, for example:
+
+        $ docker login --username=maryatdocker --password=uydfiad77fad --email=mary@docker.com
+        WARNING: login credentials saved in C:\Users\sven\.docker\config.json
+        Login Succeeded
+
+9. Type the `docker push` command to push your image to your new repository.
+
 		$ docker push maryatdocker/docker-whale
 			The push refers to a repository [maryatdocker/docker-whale] (len: 1)
-			7d9495d03763: Image push failed 
-
-			Please login prior to push:
-			Username: maryatdocker
-			Password: 
-			Email: mary@docker.com
-			WARNING: login credentials saved in /Users/mary/.dockercfg.
-			Login Succeeded
-			The push refers to a repository [maryatdocker/docker-whale] (len: 1)
-			7d9495d03763: Image already exists 
-			c81071adeeb5: Image successfully pushed 
-			eb06e47a01d2: Image successfully pushed 
-			fb434121fc77: Image successfully pushed 
-			5d5bd9951e26: Image successfully pushed 
-			99da72cfe067: Image successfully pushed 
-			1722f41ddcb5: Image successfully pushed 
-			5b74edbcaa5b: Image successfully pushed 
-			676c4a1897e6: Image successfully pushed 
-			07f8e8c5e660: Image successfully pushed 
-			37bea4ee0c81: Image successfully pushed 
-			a82efea989f9: Image successfully pushed 
-			e9e06b06e14c: Image successfully pushed 
+			7d9495d03763: Image already exists
+			c81071adeeb5: Image successfully pushed
+			eb06e47a01d2: Image successfully pushed
+			fb434121fc77: Image successfully pushed
+			5d5bd9951e26: Image successfully pushed
+			99da72cfe067: Image successfully pushed
+			1722f41ddcb5: Image successfully pushed
+			5b74edbcaa5b: Image successfully pushed
+			676c4a1897e6: Image successfully pushed
+			07f8e8c5e660: Image successfully pushed
+			37bea4ee0c81: Image successfully pushed
+			a82efea989f9: Image successfully pushed
+			e9e06b06e14c: Image successfully pushed
 			Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
 			
-9. Return to your profile on Docker Hub to see your new image.
+10. Return to your profile on Docker Hub to see your new image.
 
 	 ![New image](/tutimg/new_image.png)
 	
@@ -122,8 +121,8 @@ from the hub &mdash; why would it? The two images are identical.
     To make a good test, you need to remove the `maryatdocker/docker-whale` and
    `docker-whale` images from your local system. Removing them forces the next
    `docker pull` to get the image from your repository.
-    
-2. Use the `docker rmi` to remove the `maryatdocker/docker-whale` and `docker-whale` 
+
+3. Use the `docker rmi` to remove the `maryatdocker/docker-whale` and `docker-whale`
 images.
 
 	You can use an ID or the name to remove an image.
@@ -131,7 +130,7 @@ images.
 		$ docker rmi -f 7d9495d03763
 		$ docker rmi -f docker-whale
 		
-3. Pull a new image from your repository using the `docker pull` command.
+4. Pull a new image from your repository using the `docker pull` command.
 
     The command you type should include your username from Docker Hub.
 
@@ -142,22 +141,22 @@ images.
 		$ docker run maryatdocker/docker-whale
 		Unable to find image 'maryatdocker/docker-whale:latest' locally
 		latest: Pulling from maryatdocker/docker-whale
-		eb06e47a01d2: Pull complete 
-		c81071adeeb5: Pull complete 
-		7d9495d03763: Already exists 
-		e9e06b06e14c: Already exists 
-		a82efea989f9: Already exists 
-		37bea4ee0c81: Already exists 
-		07f8e8c5e660: Already exists 
-		676c4a1897e6: Already exists 
-		5b74edbcaa5b: Already exists 
-		1722f41ddcb5: Already exists 
-		99da72cfe067: Already exists 
-		5d5bd9951e26: Already exists 
-		fb434121fc77: Already exists 
+		eb06e47a01d2: Pull complete
+		c81071adeeb5: Pull complete
+		7d9495d03763: Already exists
+		e9e06b06e14c: Already exists
+		a82efea989f9: Already exists
+		37bea4ee0c81: Already exists
+		07f8e8c5e660: Already exists
+		676c4a1897e6: Already exists
+		5b74edbcaa5b: Already exists
+		1722f41ddcb5: Already exists
+		99da72cfe067: Already exists
+		5d5bd9951e26: Already exists
+		fb434121fc77: Already exists
 		Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
 		Status: Downloaded newer image for maryatdocker/docker-whale:latest
-		 ________________________________________ 
+		 ________________________________________
 		/ Having wandered helplessly into a      \
 		| blinding snowstorm Sam was greatly     |
 		| relieved to see a sturdy Saint Bernard |
@@ -167,18 +166,18 @@ images.
 		|                                        |
 		| "At last," cried Sam, "man's best      |
 		\ friend -- and a great big dog, too!"   /
-		 ---------------------------------------- 
+		 ----------------------------------------
 				\
 				 \
-					\     
-												##        .            
-									## ## ##       ==            
-							 ## ## ## ##      ===            
-					 /""""""""""""""""___/ ===        
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-					 \______ o          __/            
-						\    \        __/             
-							\____\______/   
+					\
+												##        .
+									## ## ##       ==
+							 ## ## ## ##      ===
+					 /""""""""""""""""___/ ===
+			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
+					 \______ o          __/
+						\    \        __/
+							\____\______/
 
 ## Where to go next
 

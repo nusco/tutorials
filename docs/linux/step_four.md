@@ -16,7 +16,7 @@ think of something to say. And you type a lot to get `whalesay` to talk.
 
 In this next section, you will improve the `whalesay` image by building a new version that "talks on its own" and requires fewer words to run.
 
-## Step 1. Write a Dockerfile
+## Step 1: Write a Dockerfile
 
 In this step, you use your favorite text editor to write a short Dockerfile.  A
 Dockerfile describes the software that is "baked" into an image. It isn't just
@@ -50,10 +50,10 @@ commands to run. Your recipe is going to be very short.
 7. Add a line to the file like this:
 
 		FROM docker/whalesay:latest
-		
+
 	The FROM keyword tells Docker which image your image is based on. Whalesay is cute and has the `cowsay`
-	program already, so we'll start there.	
-		
+	program already, so we'll start there.
+
 8. Now, add the `fortunes` program to the image.
 
 	 	RUN apt-get -y update && apt-get install -y fortunes
@@ -68,19 +68,21 @@ when the image is loaded.
 		CMD /usr/games/fortune -a | cowsay
 
  	This line tells the `fortune` program to pass a nifty quote to the `cowsay` program.
-		
+
 10. Check your work, your file should look like this:
 
 		FROM docker/whalesay:latest
 		RUN apt-get -y update && apt-get install -y fortunes
 		CMD /usr/games/fortune -a | cowsay
-		
+
 11. Save and close your Dockerfile.
 
 	At this point, you have all your software ingredients and behaviors described
 	in a Dockerfile. You are ready to build a new image.
 
-12. Now, build your new image by typing the `docker build -t docker-whale .` command in your terminal (don't forget the . period).
+## Step 2: Build an image from your Dockerfile
+
+1. Now, build your new image by typing the `docker build -t docker-whale .` command in your terminal (don't forget the . period).
 
         $ docker build -t docker-whale .
         Sending build context to Docker daemon 158.8 MB
@@ -92,7 +94,7 @@ when the image is loaded.
     you do anything with the new image, take a minute to learn about the
     Dockerfile build process.
 
-## Step 2: Learn about the build process
+## Step 3: Learn about the build process
 
 The `docker build -t docker-whale .` command takes the `Dockerfile` in the
 current directory, and builds an image called `docker-whale` on your local
@@ -149,7 +151,7 @@ Then, Docker installs the new `fortunes` software.
      ---> c81071adeeb5
     Removing intermediate container 23aa52c1897c
   
-Finally, Docker finishes the build and reports its outcome.		
+Finally, Docker finishes the build and reports its outcome.
 
     Step 3 : CMD /usr/games/fortune -a | cowsay
      ---> Running in a8e6faa88df3
@@ -158,7 +160,7 @@ Finally, Docker finishes the build and reports its outcome.
     Successfully built 7d9495d03763
 
 
-## Step 3: Run your new docker-whale
+## Step 4: Run your new docker-whale
 
 In this step, you verify the new images is on your computer and then you run your new image.
 
@@ -176,28 +178,28 @@ In this step, you verify the new images is on your computer and then you run you
 
 3. Run your new image by typing `docker run docker-whale` and pressing RETURN.
 
-		$ docker run docker-whale
-		 _________________________________________ 
-		/ "He was a modest, good-humored boy. It  \
-		\ was Oxford that made him insufferable." /
-		 ----------------------------------------- 
-				\
-				 \
-					\     
-												##        .            
-									## ## ##       ==            
-							 ## ## ## ##      ===            
-					 /""""""""""""""""___/ ===        
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-					 \______ o          __/            
-						\    \        __/             
-							\____\______/   
-
+	$ docker run docker-whale
+	 _________________________________________ 
+	/ "He was a modest, good-humored boy. It  \
+	\ was Oxford that made him insufferable." /
+	 ----------------------------------------- 
+            \
+             \
+              \     
+                            ##        .            
+                      ## ## ##       ==            
+                   ## ## ## ##      ===            
+               /""""""""""""""""___/ ===        
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+               \______ o          __/            
+                \    \        __/             
+                  \____\______/   
+							
 	As you can see, you've made the whale a lot smarter. It finds its own
 	things to say and the command line is a lot shorter!  You may also notice
 	that Docker didn't have to download anything.  That is because the image was
 	built locally and is already available.
-	
+
 ## Where to go next
 
 On this page, you learned to build an image by writing your own Dockerfile.

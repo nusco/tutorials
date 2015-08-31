@@ -25,11 +25,7 @@ If you don't already have a terminal open, open one now:
 
 3. Place your cursor at the prompt in the Docker Quickstart Terminal window.
 
-4. Make sure you are in `testdocker` folder.
-
-        $ cd ~/Desktop/testdocker
-
-5. Type `docker images` to list the images you currently have:
+4. Type `docker images` to list the images you currently have:
 
         $ docker images
         REPOSITORY           TAG          IMAGE ID            CREATED             VIRTUAL SIZE
@@ -37,8 +33,8 @@ If you don't already have a terminal open, open one now:
         <none>               <none>       5dac217f722c        45 minutes ago      273.7 MB
         docker/whalesay      latest       fb434121fc77        4 hours ago         247 MB
         hello-world          latest       91c95931e552        5 weeks ago         910 B
-    
-6. Find the `IMAGE ID` for your `docker-whale` image. 
+
+5. Find the `IMAGE ID` for your `docker-whale` image. 
 
 	In this example, the id is `7d9495d03763`.
 
@@ -47,7 +43,7 @@ If you don't already have a terminal open, open one now:
 	Docker Hub to associate it with your account.  The `namespace` is the same as
 	your account name.
 
-7. Use `IMAGE ID` and the `docker tag` command to tag your `docker-whale` image.
+6. Use `IMAGE ID` and the `docker tag` command to tag your `docker-whale` image.
 
     The command you type looks like this:
     
@@ -58,7 +54,7 @@ If you don't already have a terminal open, open one now:
 
 		$ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
 	
-8. Type the `docker images` command again to see your newly tagged image.
+7. Type the `docker images` command again to see your newly tagged image.
 
         $ docker images
         REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
@@ -68,7 +64,7 @@ If you don't already have a terminal open, open one now:
         docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
         hello-world                 latest    91c95931e552    5 weeks ago      910 B
 
-9. Use the `docker login` command to log into the Docker Hub from the command line.
+8. Use the `docker login` command to log into the Docker Hub from the command line.
 
     The format for the login command is:
     
@@ -76,42 +72,30 @@ If you don't already have a terminal open, open one now:
 
     So, for example:
     
-        $ docker login --username=moxiegirl --password=uydfiad77fad --email=mary@docker.com
-        WARNING: login credentials saved in /Users/mary/.dockercfg.
+        $ docker login --username=maryatdocker --password=uydfiad77fad --email=mary@docker.com
+        WARNING: login credentials saved in C:\Users\sven\.docker\config.json
         Login Succeeded
 
-10. Type the `docker push` command to push your image to your new repository.
+9. Type the `docker push` command to push your image to your new repository.
 
-	The `docker push` command includes the image and the image build context. If
-	you have followed these instructions, that context is the `testdocker` folder
-	with the single `Dockerfile` in it. When you push, the system provides a
-	security warning about the context files.
-
-        $ docker push maryatdocker/docker-whale
-        WARN[0000] SECURITY WARNING: You are building a Docker image from Windows against 
-        a Linux Docker host. All files and directories added to build context will have
-        '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions 
-        for sensitive files and directories.
-        The push refers to a repository [maryatdocker/docker-whale] (len: 1)
-        7d9495d03763: Image push failed 
-      
-        The push refers to a repository [maryatdocker/docker-whale] (len: 1)
-        7d9495d03763: Image already exists 
-        c81071adeeb5: Image successfully pushed 
-        eb06e47a01d2: Image successfully pushed 
-        fb434121fc77: Image successfully pushed 
-        5d5bd9951e26: Image successfully pushed 
-        99da72cfe067: Image successfully pushed 
-        1722f41ddcb5: Image successfully pushed 
-        5b74edbcaa5b: Image successfully pushed 
-        676c4a1897e6: Image successfully pushed 
-        07f8e8c5e660: Image successfully pushed 
-        37bea4ee0c81: Image successfully pushed 
-        a82efea989f9: Image successfully pushed 
-        e9e06b06e14c: Image successfully pushed 
-        Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
+		$ docker push maryatdocker/docker-whale
+			The push refers to a repository [maryatdocker/docker-whale] (len: 1)
+			7d9495d03763: Image already exists 
+			c81071adeeb5: Image successfully pushed 
+			eb06e47a01d2: Image successfully pushed 
+			fb434121fc77: Image successfully pushed 
+			5d5bd9951e26: Image successfully pushed 
+			99da72cfe067: Image successfully pushed 
+			1722f41ddcb5: Image successfully pushed 
+			5b74edbcaa5b: Image successfully pushed 
+			676c4a1897e6: Image successfully pushed 
+			07f8e8c5e660: Image successfully pushed 
+			37bea4ee0c81: Image successfully pushed 
+			a82efea989f9: Image successfully pushed 
+			e9e06b06e14c: Image successfully pushed 
+			Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
 			
-11. Return to your profile on Docker Hub to see your new image.
+10. Return to your profile on Docker Hub to see your new image.
 
 	 ![New image](/tutimg/new_image.png)
 	
@@ -124,11 +108,7 @@ from the hub &mdash; why would it? The two images are identical.
 
 1. Place your cursor at the prompt in the Docker Quickstart Terminal window.
 
-2. Make sure you are in `testdocker` folder.
-
-        $ cd ~/Desktop/testdocker
-
-3. Type `docker images` to list the images you currently have on your local machine.
+2. Type `docker images` to list the images you currently have on your local machine.
 
 		$ docker images
 		REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
@@ -142,7 +122,7 @@ from the hub &mdash; why would it? The two images are identical.
    `docker-whale` images from your local system. Removing them forces the next
    `docker pull` to get the image from your repository.
     
-2. Use the `docker rmi` to remove the `maryatdocker/docker-whale` and `docker-whale` 
+3. Use the `docker rmi` to remove the `maryatdocker/docker-whale` and `docker-whale` 
 images.
 
 	You can use an ID or the name to remove an image.
@@ -150,7 +130,7 @@ images.
 		$ docker rmi -f 7d9495d03763
 		$ docker rmi -f docker-whale
 		
-3. Pull a new image from your repository using the `docker pull` command.
+4. Pull a new image from your repository using the `docker pull` command.
 
     The command you type should include your username from Docker Hub.
 

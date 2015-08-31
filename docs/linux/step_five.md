@@ -44,23 +44,23 @@ Before you can share anything on the hub, you need to verify your email address.
 2. Open the email and click the **Confirm Your Email** button.
 
 	 The browser opens Docker Hub to your profile page.
-	 
+
 4. Choose **Add Repository**.
 
 	The browser opens the **Add Repository** page.
-	
+
 5. Leave the Namespace alone but enter a repository name and description.
 
 6. Make sure you are creating a **Public** repository.
 
-  When you are done, your form should look similar to the following:
+    When you are done, your form should look similar to the following:
 
-  ![Add repository](/tutimg/add_repository.png)
+    ![Add repository](/tutimg/add_repository.png)
 
 6. Press **Add Repository** when you are done.
 
-		Docker Hub creates your new repository.	
-			
+	Docker Hub creates your new repository.
+
 ## Where to go next
 
 On this page, you opened an account on Docker Hub and created a new repository.

@@ -84,8 +84,7 @@ and choosing "Open" from the pop-up menu.
      ![All finished](/mac/images/mac-page-finished.png)
 
 
-
-## Step 4. Verify your installation
+## Step 3: Verify your installation
 
 To run a Docker container, you:
 
@@ -149,22 +148,32 @@ Virtual Box VM, it maintains its configuration between uses.
     output looks like this:
 
         $ docker run hello-world
-        Unable to find image 'hello-world:latest' locally
-        Pulling repository hello-world
-        91c95931e552: Download complete
-        a8219747be10: Download complete
-        Status: Downloaded newer image for hello-world:latest
-        Hello from Docker.
-        This message shows that your installation appears to be working correctly.
+	Unable to find image 'hello-world:latest' locally
+	latest: Pulling from library/hello-world
+	535020c3e8ad: Pull complete
+	af340544ed62: Pull complete
+	Digest: sha256:a68868bfe696c00866942e8f5ca39e3e31b79c1e50feaee4ce5e28df2f051d5c
+	Status: Downloaded newer image for hello-world:latest
 
-        To generate this message, Docker took the following steps:
-         1. The Docker client contacted the Docker daemon.
-         2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-            (Assuming it was not already locally available.)
-         3. The Docker daemon created a new container from that image which runs the
-            executable that produces the output you are currently reading.
-         4. The Docker daemon streamed that output to the Docker client, which sent it
-            to your terminal.
+	Hello from Docker.
+	This message shows that your installation appears to be working correctly.
+
+	To generate this message, Docker took the following steps:
+	 1. The Docker client contacted the Docker daemon.
+	 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+	 3. The Docker daemon created a new container from that image which runs the
+	    executable that produces the output you are currently reading.
+	 4. The Docker daemon streamed that output to the Docker client, which sent it
+	    to your terminal.
+
+	To try something more ambitious, you can run an Ubuntu container with:
+	 $ docker run -it ubuntu bash
+
+	Share images, automate workflows, and more with a free Docker Hub account:
+	 https://hub.docker.com
+
+	For more examples and ideas, visit:
+	 https://docs.docker.com/userguide/
 
         To try something more ambitious, you can run an Ubuntu container with:
          $ docker run -it ubuntu bash

@@ -38,35 +38,44 @@ weight = 1
 
         $ docker run hello-world
         Unable to find image 'hello-world:latest' locally
-        511136ea3c5a: Pull complete
-        31cbccb51277: Pull complete
-        e45a5af57b00: Pull complete
-        hello-world:latest: The image you are pulling has been verified.
-        Important: image verification is a tech preview feature and should not be
-        relied on to provide security.
+        latest: Pulling from library/hello-world
+        535020c3e8ad: Pull complete
+        af340544ed62: Pull complete
+        Digest: sha256:a68868bfe696c00866942e8f5ca39e3e31b79c1e50feaee4ce5e28df2f051d5c
         Status: Downloaded newer image for hello-world:latest
+
         Hello from Docker.
         This message shows that your installation appears to be working correctly.
 
         To generate this message, Docker took the following steps:
-        1. The Docker client contacted the Docker daemon.
-        2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
-           (Assuming it was not already locally available.)
-        3. The Docker daemon created a new container from that image which runs the
-           executable that produces the output you are currently reading.
-        4. The Docker daemon streamed that output to the Docker client, which sent it
-           to your terminal.
+         1. The Docker client contacted the Docker daemon.
+         2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+         3. The Docker daemon created a new container from that image which runs the
+            executable that produces the output you are currently reading.
+         4. The Docker daemon streamed that output to the Docker client, which sent it
+            to your terminal.
 
         To try something more ambitious, you can run an Ubuntu container with:
-        $ docker run -it ubuntu bash
+         $ docker run -it ubuntu bash
+
+        Share images, automate workflows, and more with a free Docker Hub account:
+         https://hub.docker.com
 
         For more examples and ideas, visit:
-        https://docs.docker.com/userguide/
-  
+         https://docs.docker.com/userguide/
+
+        To try something more ambitious, you can run an Ubuntu container with:
+         $ docker run -it ubuntu bash
+
+        For more examples and ideas, visit:
+         https://docs.docker.com/userguide/
+
+
 ## Where to go next
 
-At this point, you have successfully installed Docker. Leave the terminal window
-open. Then, go onto [read a very short explainer Docker images and
-containers](/linux/step_two).
+At this point, you have successfully installed Docker. Leave the terminal
+window open. Now, go to the next page to [read a very short introduction Docker
+images and containers](/linux/step_two).
+
 
 &nbsp;
