@@ -16,7 +16,7 @@ You install Docker using Docker Toolbox. Docker Toolbox includes the following D
 * Docker Compose for running the `docker-compose` binary
 * Kitematic, the Docker GUI
 * a shell preconfigured for a Docker command-line environment
-* Oracle VM VirtualBox 
+* Oracle VM VirtualBox
 
 Because the Docker daemon uses Linux-specific kernel features, you can't run
 Docker natively in OS X. Instead, you must use `docker-machine` to create and
@@ -24,10 +24,10 @@ attach to a Docker VM on your machine. This VM hosts Docker for you on your Mac.
 
 ## Step 1: Check your version
 
-Your Mac must be running OS X 10.6 "Snow Leopard" or newer to run Docker.
+Your Mac must be running OS X 10.8 "Mountain Lion" or newer to run Docker.
 To find out what version of the OS you have:
 
-1. Choose **About this Mac** from the Apple menu. 
+1. Choose **About this Mac** from the Apple menu.
 
     ![Which version](/mac/images/which_version.png)
 
@@ -48,39 +48,40 @@ To find out what version of the OS you have:
 3. Install Docker Toolbox by double-clicking the package or by right-clicking
 and choosing "Open" from the pop-up menu.
 
-    The installer launches the "Install Docker Toolbox" dialog.
-    
+    The installer launches an introductory dialog, followed by an overview of what's installed.
+
     ![Install Docker Toolbox](/mac/images/mac-welcome-page.png)
 
 4. Press **Continue** to install the toolbox.
 
     The installer presents you with options to customize the standard
-    installation. 
-  
+    installation.
+
     ![Standard install](/mac/images/mac-page-two.png)
-  
+
     By default, the standard Docker Toolbox installation:
-  
-    * installs binaries for the Docker tools in `/usr/local/bin` 
-    * makes these binaries available to all users 
-    * updates any existing Virtual Box installation 
-  
+
+    * installs binaries for the Docker tools in `/usr/local/bin`
+    * makes these binaries available to all users
+    * updates any existing Virtual Box installation
+
     For now, don't change any of the defaults.
 
 5. Press **Install** to perform the standard installation.
 
      The system prompts you for your password.
-   
+
      ![Password prompt](/mac/images/mac-password-prompt.png)
-   
+
 6. Provide your password to continue with the installation.
 
-     When it completes, the installer provides you with some information you can
-     use to complete some common tasks. You can ignore these for now.
-   
+     When it completes, the installer provides you with some shortcuts. You can ignore this for now and click **Continue**.
+
+     ![Quickstart](/mac/images/mac-page-quickstart.png)
+
+     Then click **Close** to finish the installer.
+
      ![All finished](/mac/images/mac-page-finished.png)
-   
-7. Press **Close** to exit.
 
 
 
@@ -88,7 +89,7 @@ and choosing "Open" from the pop-up menu.
 
 To run a Docker container, you:
 
-* create a new (or start an existing) Docker virtual machine 
+* create a new (or start an existing) Docker virtual machine
 * switch your environment to your new VM
 * use the `docker` client to create, load, and manage containers
 
@@ -98,11 +99,11 @@ Virtual Box VM, it maintains its configuration between uses.
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
     ![Launchpad](/mac/images/applications_folder.png)
-    
+
 2. Click the icon to launch a Docker Quickstart Terminal window.
 
-    The terminal does a number of things to set up Docker Quickstart Terminal for you. 
-    
+    The terminal does a number of things to set up Docker Quickstart Terminal for you.
+
         Last login: Sat Jul 11 20:09:45 on ttys002
         bash '/Applications/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
         Get http:///var/run/docker.sock/v1.19/images/json?all=1&filters=%7B%22dangling%22%3A%5B%22true%22%5D%7D: dial unix /var/run/docker.sock: no such file or directory. Are you trying to connect to a TLS-enabled daemon without TLS?
@@ -133,10 +134,10 @@ Virtual Box VM, it maintains its configuration between uses.
 
 3.  Click your mouse in the terminal window to make it active.
 
-    If you aren't familiar with a terminal window, here are some quick tips. 
-    
-    ![Teriminal](/tutimg/terminal.png) 
-    
+    If you aren't familiar with a terminal window, here are some quick tips.
+
+    ![Teriminal](/tutimg/terminal.png)
+
     The prompt is traditionally a `$` dollar sign. You type commands into the
     *command line* which is the area after the prompt. Your cursor is indicated
     by a highlighted area or a `|` that appears in the command line. After
@@ -146,12 +147,12 @@ Virtual Box VM, it maintains its configuration between uses.
 
     The command does some work for you, if everything runs well, the command's
     output looks like this:
-    
+
         $ docker run hello-world
         Unable to find image 'hello-world:latest' locally
         Pulling repository hello-world
-        91c95931e552: Download complete 
-        a8219747be10: Download complete 
+        91c95931e552: Download complete
+        a8219747be10: Download complete
         Status: Downloaded newer image for hello-world:latest
         Hello from Docker.
         This message shows that your installation appears to be working correctly.
