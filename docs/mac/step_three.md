@@ -9,7 +9,9 @@ weight = 3
 
 # Find and run the whalesay image 
 
-People all over the world create Docker images. You can find these images by browsing the Docker Hub. In this next section, you'll do just that to find the image to use in the rest of this getting started.
+People all over the world create Docker images. You can find these images by
+browsing the Docker Hub. In this next section, you'll search for and find the
+image you'll use in the rest of this getting started.
 
 ## Step 1: Locate the whalesay image
 
@@ -111,22 +113,22 @@ If you don't already have the Docker Quickstart Terminal open, open one now:
     Try running the `whalesay` image again with a word or phrase. Try a long or
     short phrase.  Can you break the cow?
 
-		$ docker run docker/whalesay cowsay boo-boo
-		 _________ 
-		< boo-boo >
-		 --------- 
-				\
-				 \
-					\     
-												##        .            
-									## ## ##       ==            
-							 ## ## ## ##      ===            
-					 /""""""""""""""""___/ ===        
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-					 \______ o          __/            
-						\    \        __/             
-							\____\______/   
-		
+        $ docker run docker/whalesay cowsay boo-boo
+         _________ 
+        < boo-boo >
+         --------- 
+            \
+             \
+              \     
+                            ##        .            
+                      ## ## ##       ==            
+                   ## ## ## ##      ===            
+               /""""""""""""""""___/ ===        
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+               \______ o          __/            
+                \    \        __/             
+                  \____\______/   
+							
 ## Where to go next
 
 On this page, you learned to search for images on Docker Hub. You used your

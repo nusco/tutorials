@@ -9,22 +9,11 @@ weight = 3
 
 # Find and run the whalesay image 
 
-People all over the world create Docker images. You can find these images by browsing the Docker Hub. In this next section, you'll search for and find the image you'll use in the rest of this getting started.
+People all over the world create Docker images. You can find these images by
+browsing the Docker Hub. In this next section, you'll search for and find the
+image you'll use in the rest of this getting started.
 
-## Step 1: Open a Docker Quickstart Terminal 
-
-If you don't already have a terminal open, open one now:
-
-1. From the **Desktop** and locate the Docker Quickstart Terminal icon.
-
-    ![Desktop](/windows/images/icon-set.png)
-    
-2. Click the icon to launch a Docker Quickstart Terminal.
-
-   Just leave the terminal open on your desktop, you'll be using it in a moment.
-
-
-## Step 2: Locate the whalesay image
+## Step 1: Locate the whalesay image
 
 1. Open your browser and  <a href="https://hub.docker.com/?utm_source=getting_started_guide&utm_medium=embedded_Windows&utm_campaign=find_whalesay" target=_blank> browse to the Docker Hub</a>.
     
@@ -41,7 +30,7 @@ If you don't already have a terminal open, open one now:
 
      ![Whalesay image](/tutimg/image_found.png)
 
-4. Click **docker/whalesay** in the results.
+4. Click on the **docker/whalesay** image in the results.
 
     The browser displays the repository for the **whalesay** image. 
    
@@ -51,10 +40,20 @@ If you don't already have a terminal open, open one now:
     include information such as what kind of software the image contains and
     how to use it. You may notice that the **whalesay** image is based on a
     Linux distribution called Ubuntu. In the next step, you run the **whalesay** image on your machine.
+    
+## Step 2: Run the whalesay image
 
-7. Put your cursor in your Docker Quickstart Terminal at the `$` prompt.
+If you don't already have the Docker Quickstart Terminal open, open one now:
 
-8. Type the `docker run docker/whalesay cowsay boo` command and press RETURN.
+1. From the **Desktop** and locate the Docker Quickstart Terminal icon.
+
+    ![Desktop](/windows/images/icon-set.png)
+    
+2. Click the icon to launch a Docker Quickstart Terminal.
+
+3. Put your cursor in your Docker Quickstart Terminal at the `$` prompt.
+
+4. Type the `docker run docker/whalesay cowsay boo` command and press RETURN.
 
     This command runs the **whalesay** image in a container. Your terminal should look like the following:
 
@@ -92,7 +91,7 @@ If you don't already have a terminal open, open one now:
 	on your local system. If the image isn't there, then `docker` gets it from
 	the hub.
 
-9. While still in the Docker Quickstart Terminal, type `docker images` command and press RETURN.
+5. While still in the Docker Quickstart Terminal, type `docker images` command and press RETURN.
 
     The command lists all the images on your local system. You should see
     `docker/whalesay` in the list.
@@ -102,42 +101,42 @@ If you don't already have a terminal open, open one now:
         docker/whalesay      latest      fb434121fc77        3 hours ago        247 MB
         hello-world          latest      91c95931e552        5 weeks ago        910 B
     
-		
-	When you run an image in a container, Docker downloads the image your
-	computer. This local copy of the image saves you time.  Docker only downloads
-	the image again if the image's source changes on the hub.  You can, of course,
-	delete the image yourself. You'll learn more about that later. Let's leave the
-	image there for now because we are going to use it later. 
+    When you run an image in a container, Docker downloads the image your
+    computer. This local copy of the image saves you time.  Docker only
+    downloads the image again if the image's source changes on the hub.  You
+    can, of course, delete the image yourself. You'll learn more about that
+    later. Let's leave the image there for now because we are going to use it
+    later. 
 
-10. Take a moment to play with the **whalesay** container a bit. 
+6. Take a moment to play with the **whalesay** container a bit. 
 
     Try running the `whalesay` image again with a word or phrase. Try a long or
     short phrase.  Can you break the cow?
 
-		$ docker run docker/whalesay cowsay boo-boo
-		 _________ 
-		< boo-boo >
-		 --------- 
-				\
-				 \
-					\     
-												##        .            
-									## ## ##       ==            
-							 ## ## ## ##      ===            
-					 /""""""""""""""""___/ ===        
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-					 \______ o          __/            
-						\    \        __/             
-							\____\______/   
-		
+	$ docker run docker/whalesay cowsay boo-boo
+         _________ 
+        < boo-boo >
+         --------- 
+            \
+             \
+              \     
+                            ##        .            
+                      ## ## ##       ==            
+                   ## ## ## ##      ===            
+               /""""""""""""""""___/ ===        
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+               \______ o          __/            
+                \    \        __/             
+                  \____\______/   
+							
+
 ## Where to go next
 
 On this page, you learned to search for images on Docker Hub. You used your
 command line to run an image. Think about it, effectively you ran a piece of
 Linux software on your Mac computer.  You learned that running an image copies
 it on your computer.  Now, you are ready to create your own image with Docker.
-
-On the next page you learn how [to build your own image](/windows/step_four).
+Go on to the next part [to build your own image](/mac/step_four).
 
 
 &nbsp;

@@ -29,7 +29,7 @@ If you don't already have a terminal open, open one now:
    Just leave the terminal open on your desktop, you'll be using it in a moment.
 
 
-## Step 2. Write a Dockerfile
+## Step 2: Write a Dockerfile
 
 In this step, you use the Windows Notepad application to write a short
 Dockerfile. A Dockerfile describes the software elements that make up an
@@ -99,11 +99,13 @@ when the image is loaded.
 
 	At this point, you have all your software ingredients and behaviors described
 	in a Dockerfile. You are ready to build a new image.
+	
+## Step 3: Build an image from your Dockerfile
 
-11. Place your cursor back in your Boot2Docker terminal.
+1. Place your cursor back in your Docker Quickstart Terminal.
 
 
-12. Make sure the Dockerfile is in the current directory by typing `cat Dockerfile`
+2. Make sure the Dockerfile is in the current directory by typing `cat Dockerfile`
 
         $ cat Dockerfile
         FROM docker/whalesay:latest
@@ -112,9 +114,7 @@ when the image is loaded.
 
         CMD /usr/games/fortune -a | cowsay
 
-13. Now, build your new image by typing  `docker build -t docker-whale .` and press RETURN.
-
-    Don't forget the . period it is part of the command.
+3. Now, build your new image by typing the `docker build -t docker-whale .` command in your terminal (don't forget the . period).
 
         $ docker build -t docker-whale .
         Sending build context to Docker daemon 158.8 MB
@@ -126,7 +126,7 @@ when the image is loaded.
     you do anything with the new image, take a minute to learn about the
     Dockerfile build process.
 
-## Step 3: Learn about the build process
+## Step 4: Learn about the build process
 
 The `docker build -t docker-whale .` command takes the `Dockerfile` in the
 current directory, and builds an image called `docker-whale` on your local
@@ -144,7 +144,7 @@ download it.
     Step 0 : FROM docker/whalesay:latest
      ---> fb434121fc77
 
-Docker moves to the next step which is to update the `apt-get` package
+Docker moves onto the next step which is to update the `apt-get` package
 manager. This takes a lot of lines, no need to list them all again here.
 
     Step 1 : RUN apt-get -y update && apt-get install -y fortunes
@@ -192,7 +192,7 @@ Finally, Docker finishes the build and reports its outcome.
     Successfully built 7d9495d03763
 
 
-## Step 4: Run your new docker-whale
+## Step 5: Run your new docker-whale
 
 In this step, you verify the new images is on your computer and then you run your new image.
 
@@ -210,23 +210,23 @@ In this step, you verify the new images is on your computer and then you run you
 
 3. Run your new image by typing `docker run docker-whale` and pressing RETURN.
 
-		$ docker run docker-whale
-		 _________________________________________ 
-		/ "He was a modest, good-humored boy. It  \
-		\ was Oxford that made him insufferable." /
-		 ----------------------------------------- 
-				\
-				 \
-					\     
-												##        .            
-									## ## ##       ==            
-							 ## ## ## ##      ===            
-					 /""""""""""""""""___/ ===        
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-					 \______ o          __/            
-						\    \        __/             
-							\____\______/   
-
+	$ docker run docker-whale
+	 _________________________________________ 
+	/ "He was a modest, good-humored boy. It  \
+	\ was Oxford that made him insufferable." /
+	 ----------------------------------------- 
+            \
+             \
+              \     
+                            ##        .            
+                      ## ## ##       ==            
+                   ## ## ## ##      ===            
+               /""""""""""""""""___/ ===        
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+               \______ o          __/            
+                \    \        __/             
+                  \____\______/   
+							
 	As you can see, you've made the whale a lot smarter. It finds its own
 	things to say and the command line is a lot shorter!  You may also notice
 	that Docker didn't have to download anything.  That is because the image was
