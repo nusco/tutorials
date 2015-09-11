@@ -210,27 +210,27 @@ In this step, you verify the new images is on your computer and then you run you
 
 3. Run your new image by typing `docker run docker-whale` and pressing RETURN.
 
-	$ docker run docker-whale
-	 _________________________________________ 
-	/ "He was a modest, good-humored boy. It  \
-	\ was Oxford that made him insufferable." /
-	 ----------------------------------------- 
-            \
-             \
-              \     
-                            ##        .            
-                      ## ## ##       ==            
-                   ## ## ## ##      ===            
-               /""""""""""""""""___/ ===        
-          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-               \______ o          __/            
-                \    \        __/             
-                  \____\______/   
-							
-	As you can see, you've made the whale a lot smarter. It finds its own
-	things to say and the command line is a lot shorter!  You may also notice
-	that Docker didn't have to download anything.  That is because the image was
-	built locally and is already available.
+        $ docker run docker-whale
+         _________________________________________ 
+        / "He was a modest, good-humored boy. It  \
+        \ was Oxford that made him insufferable." /
+         ----------------------------------------- 
+                  \
+                   \
+                    \     
+                                  ##        .            
+                            ## ## ##       ==            
+                         ## ## ## ##      ===            
+                     /""""""""""""""""___/ ===        
+                ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+                     \______ o          __/            
+                      \    \        __/             
+                        \____\______/   
+
+As you can see, you've made the whale a lot smarter. It finds its own
+things to say and the command line is a lot shorter!  You may also notice
+that Docker didn't have to download anything.  That is because the image was
+built locally and is already available.
 	
 ## Where to go next
 

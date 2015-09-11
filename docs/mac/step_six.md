@@ -156,28 +156,28 @@ images.
 		fb434121fc77: Already exists
 		Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
 		Status: Downloaded newer image for maryatdocker/docker-whale:latest
-		 ________________________________________
-		/ Having wandered helplessly into a      \
-		| blinding snowstorm Sam was greatly     |
-		| relieved to see a sturdy Saint Bernard |
-		| dog bounding toward him with the       |
-		| traditional keg of brandy strapped to  |
-		| his collar.                            |
-		|                                        |
-		| "At last," cried Sam, "man's best      |
-		\ friend -- and a great big dog, too!"   /
-		 ----------------------------------------
-				\
-				 \
-					\
-												##        .
-									## ## ##       ==
-							 ## ## ## ##      ===
-					 /""""""""""""""""___/ ===
-			~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~
-					 \______ o          __/
-						\    \        __/
-							\____\______/
+         ________________________________________
+        / Having wandered helplessly into a      \
+        | blinding snowstorm Sam was greatly     |
+        | relieved to see a sturdy Saint Bernard |
+        | dog bounding toward him with the       |
+        | traditional keg of brandy strapped to  |
+        | his collar.                            |
+        |                                        |
+        | "At last," cried Sam, "man's best      |
+        \ friend -- and a great big dog, too!"   /
+         ----------------------------------------
+                        \
+                         \
+                          \
+                                  ##        .            
+                            ## ## ##       ==            
+                         ## ## ## ##      ===            
+                     /""""""""""""""""___/ ===        
+                ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+                     \______ o          __/            
+                      \    \        __/             
+                        \____\______/   
 
 ## Where to go next
 
