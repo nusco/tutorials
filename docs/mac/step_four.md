@@ -28,7 +28,7 @@ If you don't already have a terminal open, open one now:
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
     ![Launchpad](/mac/images/applications_folder.png)
-    
+
 2. Click the icon to launch a Docker Quickstart Terminal.
 
 3. Place your cursor at the prompt in the Docker Quickstart Terminal.
@@ -36,28 +36,28 @@ If you don't already have a terminal open, open one now:
 4. Make a new directory by typing `mkdir mydockerbuild` and pressing RETURN.
 
         $ mkdir mydockerbuild
-        
-   This directory serves as the "context" for your build. The context just means it contains all the things you need to build your image. 
+
+    This directory serves as the "context" for your build. The context just means it contains all the things you need to build your image.
 
 5. Change to your new directory.
 
         $ cd mydockerbuild
-        
-   Right now the directory is empty.
+
+    Right now the directory is empty.
 
 6. Create a Dockerfile in the directory by typing `touch Dockerfile` and pressing RETURN.
 
         $ touch Dockerfile
-        
+
     The command appears to do nothing but it actually creates the Dockerfile in the current directory.  Just type `ls Dockerfile` to see it.
-    
+
         $ ls Dockerfile
         Dockerfile
-    
+
 7. Now, type the `open -e Dockerfile` to open the file in Mac's TextEdit program.
-    
+
     Your Mac opens the TextEdit program with the empty Dockerfile.
-    
+
     ![Edit Dockerfile](/mac/images/text_edit.png)
 
 8. Type `FROM docker/whalesay:latest` line into the open file.
@@ -65,32 +65,32 @@ If you don't already have a terminal open, open one now:
     Now, it should look like this.
 
     ![Line one](/mac/images/line_one.png)
-    
+
 	  The `FROM` keyword tells Docker which image your image is based on. You
-    are basing your new work on the existing `whalesay` image. 
-		
+    are basing your new work on the existing `whalesay` image.
+
 9. Now, add the `fortunes` program to the image.
 
 	 ![Line two](/mac/images/line_two.png)
-	 
+
 	 The `fortunes` program has a command that prints out wise sayings for our
 	 whale to say. So, the first step is to install it. This line adds the
 	 `fortune` program using the `apt-get` program. If these sound all very
 	 cryptic to you, don't worry. As long as you type the words correctly, they
 	 will work for you!
-	 
+
 10. Once the image has the software it needs, you instruct the software to run
 when the image is loaded.
 
 	![Line two](/mac/images/line_three.png)
 
  	This line tells the `fortune` program to send its nifty quotes to the `cowsay` program.
-		
+
 11. Save your work and the Dockerfile by choosing **File > Save** from the TextEdit menu or by pressing CMD + S on your keyboard.
 
 	At this point, you have all your software ingredients and behaviors described
 	in a Dockerfile. You are ready to build a new image.
-	
+
 ## Step 2: Build an image from your Dockerfile
 
 1. Place your cursor back in your Docker Quickstart Terminal.
@@ -112,7 +112,7 @@ when the image is loaded.
         ...snip...
         Removing intermediate container a8e6faa88df3
         Successfully built 7d9495d03763
-        
+
 	  The command takes several seconds to run and reports its outcome. Before
     you do anything with the new image, take a minute to learn about the
     Dockerfile build process.
@@ -124,8 +124,8 @@ current directory, and builds an image called `docker-whale` on your local
 machine. The command takes about a minute and its output looks really long and
 complex. In this section, you learn what each message means.
 
-First Docker checks to make sure it has everything it needs to build. 
-  
+First Docker checks to make sure it has everything it needs to build.
+
     Sending build context to Docker daemon 158.8 MB
 
 Then, Docker loads with the `whalesay` image.	It already has this image
@@ -149,9 +149,9 @@ manager. This takes a lot of lines, no need to list them all again here.
     Get:16 http://archive.ubuntu.com trusty-security/universe amd64 Packages [134 kB]
     Reading package lists...
     ---> eb06e47a01d2
-  
+
 Then, Docker installs the new `fortunes` software.
-  
+
     Removing intermediate container e2a84b5f390f
     Step 2 : RUN apt-get install -y fortunes
      ---> Running in 23aa52c1897c
@@ -173,7 +173,7 @@ Then, Docker installs the new `fortunes` software.
     Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
      ---> c81071adeeb5
     Removing intermediate container 23aa52c1897c
-  
+
 Finally, Docker finishes the build and reports its outcome.		
 
     Step 3 : CMD /usr/games/fortune -a | cowsay
@@ -202,10 +202,10 @@ In this step, you verify the new images is on your computer and then you run you
 3. Run your new image by typing `docker run docker-whale` and pressing RETURN.
 
         $ docker run docker-whale
-         _________________________________________ 
+         _________________________________________
         / "He was a modest, good-humored boy. It  \
         \ was Oxford that made him insufferable." /
-         ----------------------------------------- 
+         -----------------------------------------
                   \
                    \
                     \     
@@ -222,7 +222,7 @@ As you can see, you've made the whale a lot smarter. It finds its own
 things to say and the command line is a lot shorter!  You may also notice
 that Docker didn't have to download anything.  That is because the image was
 built locally and is already available.
-	
+
 ## Where to go next
 
 On this page, you learned to build an image by writing your own Dockerfile.
