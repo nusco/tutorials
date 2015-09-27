@@ -25,49 +25,49 @@ commands to run. Your recipe is going to be very short.
 
 1. Go back to your terminal window.
 
-3. Make a new directory by typing `mkdir mydockerbuild` and pressing RETURN.
+2. Make a new directory by typing `mkdir mydockerbuild` and pressing RETURN.
 
         $ mkdir mydockerbuild
-        
-   This directory serves as the "context" for your build. The context just means it contains all the things you need to build your image. 
 
-4. Change to your new directory.
+    This directory serves as the "context" for your build. The context just means it contains all the things you need to build your image.
+
+2. Change to your new directory.
 
         $ cd mydockerbuild
-        
-   Right now the directory is empty.
 
-5. Create a text file called `Dockerfile` in your current directory.
+     Right now the directory is empty.
 
-	You can use any text editor for example, `vi` or `nano` to do this.
+3. Create a text file called `Dockerfile` in your current directory.
 
-6. Open a your Dockerfile file.
+  	You can use any text editor for example, `vi` or `nano` to do this.
 
-	A Dockerfile describes the software that is "baked" into an image. It isn't
-	just ingredients tho, it can tell the software what environment to use or what
-	commands to run. Your recipe is going to be very short.
+4. Open a your Dockerfile file.
 
-7. Add a line to the file like this:
+  	A Dockerfile describes the software that is "baked" into an image. It isn't
+  	just ingredients tho, it can tell the software what environment to use or
+  	what commands to run. Your recipe is going to be very short.
+
+5. Add a line to the file like this:
 
 		FROM docker/whalesay:latest
 
-	The FROM keyword tells Docker which image your image is based on. Whalesay is cute and has the `cowsay`
-	program already, so we'll start there.
+  	The `FROM` keyword tells Docker which image your image is based on. Whalesay is
+  	cute and has the `cowsay` program already, so we'll start there.
 
-8. Now, add the `fortunes` program to the image.
+6. Now, add the `fortunes` program to the image.
 
 	 	RUN apt-get -y update && apt-get install -y fortunes
-	 
-	 The `fortunes` program has a command that prints out wise sayings for our
-	 whale to say. So, the first step is to install it. This line installs the
-	 software into the image.
-	 
-9. Once the image has the software it needs, you instruct the software to run
+
+    The `fortunes` program has a command that prints out wise sayings for our
+    whale to say. So, the first step is to install it. This line installs the
+    software into the image.
+
+7. Once the image has the software it needs, you instruct the software to run
 when the image is loaded.
 
 		CMD /usr/games/fortune -a | cowsay
 
- 	This line tells the `fortune` program to pass a nifty quote to the `cowsay` program.
+    This line tells the `fortune` program to pass a nifty quote to the `cowsay` program.
 
 10. Check your work, your file should look like this:
 
@@ -77,8 +77,7 @@ when the image is loaded.
 
 11. Save and close your Dockerfile.
 
-	At this point, you have all your software ingredients and behaviors described
-	in a Dockerfile. You are ready to build a new image.
+  	At this point, you have all your software ingredients and behaviors described in a Dockerfile. You are ready to build a new image.
 
 ## Step 2: Build an image from your Dockerfile
 
@@ -89,7 +88,7 @@ when the image is loaded.
         ...snip...
         Removing intermediate container a8e6faa88df3
         Successfully built 7d9495d03763
-        
+
 	  The command takes several seconds to run and reports its outcome. Before
     you do anything with the new image, take a minute to learn about the
     Dockerfile build process.
@@ -101,8 +100,8 @@ current directory, and builds an image called `docker-whale` on your local
 machine. The command takes about a minute and its output looks really long and
 complex. In this section, you learn what each message means.
 
-First Docker checks to make sure it has everything it needs to build. 
-  
+First Docker checks to make sure it has everything it needs to build.
+
     Sending build context to Docker daemon 158.8 MB
 
 Then, Docker loads with the `whalesay` image.	It already has this image
@@ -126,9 +125,9 @@ manager. This takes a lot of lines, no need to list them all again here.
     Get:16 http://archive.ubuntu.com trusty-security/universe amd64 Packages [134 kB]
     Reading package lists...
     ---> eb06e47a01d2
-  
+
 Then, Docker installs the new `fortunes` software.
-  
+
     Removing intermediate container e2a84b5f390f
     Step 2 : RUN apt-get install -y fortunes
      ---> Running in 23aa52c1897c
@@ -150,7 +149,7 @@ Then, Docker installs the new `fortunes` software.
     Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
      ---> c81071adeeb5
     Removing intermediate container 23aa52c1897c
-  
+
 Finally, Docker finishes the build and reports its outcome.
 
     Step 3 : CMD /usr/games/fortune -a | cowsay
@@ -179,10 +178,10 @@ In this step, you verify the new images is on your computer and then you run you
 3. Run your new image by typing `docker run docker-whale` and pressing RETURN.
 
         $ docker run docker-whale
-         _________________________________________ 
+         _________________________________________
         / "He was a modest, good-humored boy. It  \
         \ was Oxford that made him insufferable." /
-         ----------------------------------------- 
+         -----------------------------------------
                   \
                    \
                     \     
