@@ -53,3 +53,8 @@ docs-build:
 #	echo "$(AWS_S3_BUCKET)" > AWS_S3_BUCKET
 #	echo "$(GITCOMMIT)" > GITCOMMIT
 	docker build -t "$(DOCKER_DOCS_IMAGE)" .
+
+validate:
+	docker build --rm --force-rm -t docs-tutorial:$(git rev-parse --short HEAD) .
+	docker run --rm -t --name docs-tutorial$BUILD_NUMBER \
+		-e TIMEOUT=10m -v $(CURDIR):/src docs-tutorial:$(git rev-parse --short HEAD) /docs/validate.sh
