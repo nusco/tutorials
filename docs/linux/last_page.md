@@ -1,5 +1,5 @@
 +++
-title = "Where to go next"
+title = "Learning More"
 description = "Getting started with Docker"
 keywords = ["beginner, tutorial, Docker"]
 [menu.linux]
@@ -31,5 +31,3 @@ Depending on your interest, the Docker documentation contains a wealth of inform
 
 
 &nbsp;
-
-	

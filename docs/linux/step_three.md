@@ -17,8 +17,8 @@ People all over the world create Docker images. You can find these images by bro
 
     ![Whalesay image](/tutimg/browse_and_search.png)
 
-        The Docker Hub contains images from individuals like you and official images
-        from organizations like RedHat, IBM, Google, and a whole lot more.
+    The Docker Hub contains images from individuals like you and official images
+    from organizations like RedHat, IBM, Google, and a whole lot more.  
 
 2. Click **Browse & Search**.
 
@@ -34,7 +34,7 @@ People all over the world create Docker images. You can find these images by bro
 
       ![Whale repo](/tutimg/whale_repo.png)
 
-          Each image repository contains information about an image. It should
+    Each image repository contains information about an image. It should
     include information such as what kind of software the image contains and
     how to use it. You may notice that the **whalesay** image is based on a
     Linux distribution called Ubuntu. In the next step, you run the **whalesay** image on your machine.
@@ -104,9 +104,9 @@ People all over the world create Docker images. You can find these images by bro
     short phrase.  Can you break the cow?
 
         $ docker run docker/whalesay cowsay boo-boo
-         _________ 
+         _________
         < boo-boo >
-         --------- 
+         ---------
             \
              \
               \     
@@ -118,7 +118,7 @@ People all over the world create Docker images. You can find these images by bro
                \______ o          __/            
                 \    \        __/             
                   \____\______/   
-							
+
 ## Where to go next
 
 On this page, you learned to search for images on Docker Hub. You used your

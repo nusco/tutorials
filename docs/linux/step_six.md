@@ -44,8 +44,8 @@ new image.
     Of course, your account name will be your own. So, you type the command with
     your image's ID and your account name and press RETURN.
 
-                $ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
-        
+        $ docker tag 7d9495d03763 maryatdocker/docker-whale:latest
+
 5. Type the `docker images` command again to see your newly tagged image.
 
         $ docker images
@@ -70,27 +70,27 @@ new image.
 
 7. Type the `docker push` command to push your image to your new repository.
 
-                $ docker push maryatdocker/docker-whale
-                        The push refers to a repository [maryatdocker/docker-whale] (len: 1)
-                        7d9495d03763: Image already exists
-                        c81071adeeb5: Image successfully pushed
-                        eb06e47a01d2: Image successfully pushed
-                        fb434121fc77: Image successfully pushed
-                        5d5bd9951e26: Image successfully pushed
-                        99da72cfe067: Image successfully pushed
-                        1722f41ddcb5: Image successfully pushed
-                        5b74edbcaa5b: Image successfully pushed
-                        676c4a1897e6: Image successfully pushed
-                        07f8e8c5e660: Image successfully pushed
-                        37bea4ee0c81: Image successfully pushed
-                        a82efea989f9: Image successfully pushed
-                        e9e06b06e14c: Image successfully pushed
-                        Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
-                        
+        $ docker push maryatdocker/docker-whale
+        The push refers to a repository [maryatdocker/docker-whale] (len: 1)
+        7d9495d03763: Image already exists
+        c81071adeeb5: Image successfully pushed
+        eb06e47a01d2: Image successfully pushed
+        fb434121fc77: Image successfully pushed
+        5d5bd9951e26: Image successfully pushed
+        99da72cfe067: Image successfully pushed
+        1722f41ddcb5: Image successfully pushed
+        5b74edbcaa5b: Image successfully pushed
+        676c4a1897e6: Image successfully pushed
+        07f8e8c5e660: Image successfully pushed
+        37bea4ee0c81: Image successfully pushed
+        a82efea989f9: Image successfully pushed
+        e9e06b06e14c: Image successfully pushed
+        Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
+
 8. Return to your profile on Docker Hub to see your new image.
 
-         ![New image](/tutimg/new_image.png)
-        
+    ![New image](/tutimg/new_image.png)
+
 # Step 2: Pull your new image
 
 In this last section, you'll pull the image you just pushed to hub. Before you
@@ -102,13 +102,13 @@ from the hub &mdash; why would it? The two images are identical.
 
 2. Type `docker images` to list the images you currently have on your local machine.
 
-                $ docker images
-                REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
-                maryatdocker/docker-whale   latest    7d9495d03763    5 minutes ago    273.7 MB
-                docker-whale                latest    7d9495d03763    2 hours ago      273.7 MB
-                <none>                      <none>    5dac217f722c    5 hours ago      273.7 MB
-                docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
-                hello-world                 latest    91c95931e552    5 weeks ago      910 B
+        $ docker images
+        REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
+        maryatdocker/docker-whale   latest    7d9495d03763    5 minutes ago    273.7 MB
+        docker-whale                latest    7d9495d03763    2 hours ago      273.7 MB
+        <none>                      <none>    5dac217f722c    5 hours ago      273.7 MB
+        docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
+        hello-world                 latest    91c95931e552    5 weeks ago      910 B
 
     To make a good test, you need to remove the `maryatdocker/docker-whale` and
    `docker-whale` images from your local system. Removing them forces the next
@@ -117,59 +117,59 @@ from the hub &mdash; why would it? The two images are identical.
 3. Use the `docker rmi` to remove the `maryatdocker/docker-whale` and `docker-whale`
 images.
 
-        You can use an ID or the name to remove an image.
+    You can use an ID or the name to remove an image.
 
-                $ docker rmi -f 7d9495d03763
-                $ docker rmi -f docker-whale
-                
+        $ docker rmi -f 7d9495d03763
+        $ docker rmi -f docker-whale
+
 4. Pull a new image from your repository using the `docker pull` command.
 
     The command you type should include your username from Docker Hub.
 
          docker pull yourusername/docker-whale
 
-        Since the image is no longer available on your local system, Docker downloads it.
+    Since the image is no longer available on your local system, Docker downloads it.
 
-                $ docker run maryatdocker/docker-whale
-                Unable to find image 'maryatdocker/docker-whale:latest' locally
-                latest: Pulling from maryatdocker/docker-whale
-                eb06e47a01d2: Pull complete
-                c81071adeeb5: Pull complete
-                7d9495d03763: Already exists
-                e9e06b06e14c: Already exists
-                a82efea989f9: Already exists
-                37bea4ee0c81: Already exists
-                07f8e8c5e660: Already exists
-                676c4a1897e6: Already exists
-                5b74edbcaa5b: Already exists
-                1722f41ddcb5: Already exists
-                99da72cfe067: Already exists
-                5d5bd9951e26: Already exists
-                fb434121fc77: Already exists
-                Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
-                Status: Downloaded newer image for maryatdocker/docker-whale:latest
-         ________________________________________
-        / Having wandered helplessly into a      \
-        | blinding snowstorm Sam was greatly     |
-        | relieved to see a sturdy Saint Bernard |
-        | dog bounding toward him with the       |
-        | traditional keg of brandy strapped to  |
-        | his collar.                            |
-        |                                        |
-        | "At last," cried Sam, "man's best      |
-        \ friend -- and a great big dog, too!"   /
-         ----------------------------------------
-                        \
-                         \
+          $ docker run maryatdocker/docker-whale
+          Unable to find image 'maryatdocker/docker-whale:latest' locally
+          latest: Pulling from maryatdocker/docker-whale
+          eb06e47a01d2: Pull complete
+          c81071adeeb5: Pull complete
+          7d9495d03763: Already exists
+          e9e06b06e14c: Already exists
+          a82efea989f9: Already exists
+          37bea4ee0c81: Already exists
+          07f8e8c5e660: Already exists
+          676c4a1897e6: Already exists
+          5b74edbcaa5b: Already exists
+          1722f41ddcb5: Already exists
+          99da72cfe067: Already exists
+          5d5bd9951e26: Already exists
+          fb434121fc77: Already exists
+          Digest: sha256:ad89e88beb7dc73bf55d456e2c600e0a39dd6c9500d7cd8d1025626c4b985011
+          Status: Downloaded newer image for maryatdocker/docker-whale:latest
+           ________________________________________
+          / Having wandered helplessly into a      \
+          | blinding snowstorm Sam was greatly     |
+          | relieved to see a sturdy Saint Bernard |
+          | dog bounding toward him with the       |
+          | traditional keg of brandy strapped to  |
+          | his collar.                            |
+          |                                        |
+          | "At last," cried Sam, "man's best      |
+          \ friend -- and a great big dog, too!"   /
+           ----------------------------------------
                           \
-                                  ##        .            
-                            ## ## ##       ==            
-                         ## ## ## ##      ===            
-                     /""""""""""""""""___/ ===        
-                ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-                     \______ o          __/            
-                      \    \        __/             
-                        \____\______/   
+                           \
+                            \
+                                    ##        .            
+                              ## ## ##       ==            
+                           ## ## ## ##      ===            
+                       /""""""""""""""""___/ ===        
+                  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
+                       \______ o          __/            
+                        \    \        __/             
+                          \____\______/   
 
 ## Where to go next
 
