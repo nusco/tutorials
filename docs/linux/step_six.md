@@ -22,18 +22,17 @@ new image.
         $ docker images
         REPOSITORY           TAG          IMAGE ID            CREATED             VIRTUAL SIZE
         docker-whale         latest       7d9495d03763        38 minutes ago      273.7 MB
-        <none>               <none>       5dac217f722c        45 minutes ago      273.7 MB
         docker/whalesay      latest       fb434121fc77        4 hours ago         247 MB
         hello-world          latest       91c95931e552        5 weeks ago         910 B
 
 3. Find the `IMAGE ID` for your `docker-whale` image.
 
-        In this example, the id is `7d9495d03763`.
+    In this example, the id is `7d9495d03763`.
 
-        You'll notice that currently, the `REPOSITORY` shows the repository but not
-        the namespace for `docker-whale`. You need to include the `namespace` for
-        Docker Hub to associate it with your account.  The `namespace` is the same as
-        your account name.
+    You'll notice that currently, the `REPOSITORY` shows the repository but not
+    the namespace for `docker-whale`. You need to include the `namespace` for
+    Docker Hub to associate it with your account.  The `namespace` is the same as
+    your account name.
 
 4. Use `IMAGE ID` and the `docker tag` command to tag your `docker-whale` image.
 
@@ -52,7 +51,6 @@ new image.
         REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
         maryatdocker/docker-whale   latest    7d9495d03763    5 minutes ago    273.7 MB
         docker-whale                latest    7d9495d03763    2 hours ago      273.7 MB
-        <none>                      <none>    5dac217f722c    5 hours ago      273.7 MB
         docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
         hello-world                 latest    91c95931e552    5 weeks ago      910 B
 
@@ -68,7 +66,7 @@ new image.
         WARNING: login credentials saved in C:\Users\sven\.docker\config.json
         Login Succeeded
 
-7. Type the `docker push` command to push your image to your new repository.
+7. Use the `docker push` command to push your image to your new repository.
 
         $ docker push maryatdocker/docker-whale
         The push refers to a repository [maryatdocker/docker-whale] (len: 1)
@@ -95,7 +93,7 @@ new image.
 
 In this last section, you'll pull the image you just pushed to hub. Before you
 do that though, you'll need to remove the original image from your local
-machine. If you left the original image on your machine. Docker would not pull
+machine. If you left the original image on your machine, Docker would not pull
 from the hub &mdash; why would it? The two images are identical.
 
 1. Place your cursor at the prompt in your terminal window.
@@ -106,7 +104,6 @@ from the hub &mdash; why would it? The two images are identical.
         REPOSITORY                  TAG       IMAGE ID        CREATED          VIRTUAL SIZE
         maryatdocker/docker-whale   latest    7d9495d03763    5 minutes ago    273.7 MB
         docker-whale                latest    7d9495d03763    2 hours ago      273.7 MB
-        <none>                      <none>    5dac217f722c    5 hours ago      273.7 MB
         docker/whalesay             latest    fb434121fc77    5 hours ago      247 MB
         hello-world                 latest    91c95931e552    5 weeks ago      910 B
 
