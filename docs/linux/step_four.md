@@ -41,11 +41,7 @@ commands to run. Your recipe is going to be very short.
 
   	You can use any text editor for example, `vi` or `nano` to do this.
 
-4. Open a your Dockerfile file.
-
-  	A Dockerfile describes the software that is "baked" into an image. It isn't
-  	just ingredients tho, it can tell the software what environment to use or
-  	what commands to run. Your recipe is going to be very short.
+4. Open your Dockerfile file.
 
 5. Add a line to the file like this:
 
