@@ -22,7 +22,7 @@ If you don't already have a terminal open, open one now:
 
 1. From the **Desktop** and locate the Docker Quickstart Terminal icon.
 
-    ![Desktop](/windows/images/icon-set.png)
+    ![Desktop](images/icon-set.png)
     
 2. Click the icon to launch a Docker Quickstart Terminal.
 
@@ -63,24 +63,24 @@ to use or what commands to run in the container. Your Dockerfile is going to be 
     
 6. Now, type the `notepad Dockerfile&` to open the file in Window's Notepad  (don't forget the `&` ampersand).
     
-    ![ampersand](/windows/images/ampersand.png)
+    ![ampersand](images/ampersand.png)
     
     Your system opens the Notepad program with the empty Dockerfile.
     
-    ![Edit Dockerfile](/windows/images/note-pad1.png)
+    ![Edit Dockerfile](images/note-pad1.png)
 
 7. Type `FROM docker/whalesay:latest` line into the open file.
 
     Now, it should look like this.
 
-    ![Line one](/windows/images/note-pad2.png)
+    ![Line one](images/note-pad2.png)
     
 	  The `FROM` keyword tells Docker which image your image is based on. You
     are basing your new work on the existing `whalesay` image. 
 		
 8. Now, add the `fortunes` program to the image.
 
-	 ![Line two](/windows/images/note-pad3.png)
+	 ![Line two](images/note-pad3.png)
 	 
 	 The `fortunes` program has a command that prints out wise sayings for our
 	 whale to say. So, the first step is to install it. This line adds the
@@ -91,7 +91,7 @@ to use or what commands to run in the container. Your Dockerfile is going to be 
 9. Once the image has the software it needs, you instruct the software to run
 when the image is loaded.
 
-	![Line two](/windows/images/note-pad4.png)
+	![Line two](images/note-pad4.png)
 
  	This line tells the `fortune` program to send its nifty quotes to the `cowsay` program.
 		
@@ -237,7 +237,7 @@ built locally and is already available.
 On this page, you learned to build an image by writing your own Dockerfile.
 You ran your image in a container. You also just used Linux from your Windows yet
 again. In the next section, you take the first step in sharing your image by
-[creating a Docker Hub account](/windows/step_five).
+[creating a Docker Hub account](step_five.md).
 
 
 &nbsp;

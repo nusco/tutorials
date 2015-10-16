@@ -17,7 +17,7 @@ image you'll use in the rest of this getting started.
 
 1. Open your browser and  <a href="https://hub.docker.com/?utm_source=getting_started_guide&utm_medium=embedded_MacOSX&utm_campaign=find_whalesay" target=_blank> browse to the Docker Hub</a>.
     
-    ![Whalesay image](/tutimg/browse_and_search.png)
+    {{< figure src="/tutimg/browse_and_search.png" >}}
 
 	The Docker Hub contains images from individuals like you and official images
 	from organizations like RedHat, IBM, Google, and a whole lot more.
@@ -28,13 +28,13 @@ image you'll use in the rest of this getting started.
 
 3. Enter the word `whalesay` in the search bar.
 
-     ![Whalesay image](/tutimg/image_found.png)
+     {{< figure src="/tutimg/image_found.png" >}}
 
 4. Click on the **docker/whalesay** image in the results.
 
     The browser displays the repository for the **whalesay** image. 
    
-      ![Whale repo](/tutimg/whale_repo.png)
+      {{< figure src="/tutimg/whale_repo.png" >}}
 
 	  Each image repository contains information about an image. It should
     include information such as what kind of software the image contains and
@@ -47,7 +47,7 @@ If you don't already have the Docker Quickstart Terminal open, open one now:
 
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
-    ![Launchpad](/mac/images/applications_folder.png)
+    ![Launchpad](images/applications_folder.png)
     
 2. Click the icon to launch a Docker Quickstart Terminal.
 
@@ -135,7 +135,7 @@ On this page, you learned to search for images on Docker Hub. You used your
 command line to run an image. Think about it, effectively you ran a piece of
 Linux software on your Mac computer.  You learned that running an image copies
 it on your computer.  Now, you are ready to create your own image with Docker.
-Go on to the next part [to build your own image](/mac/step_four).
+Go on to the next part [to build your own image](step_four.md).
 
 
 &nbsp;

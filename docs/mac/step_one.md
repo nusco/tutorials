@@ -29,7 +29,7 @@ To find out what version of the OS you have:
 
 1. Choose **About this Mac** from the Apple menu.
 
-    ![Which version](/mac/images/which_version.png)
+    ![Which version](images/which_version.png)
 
     The version number appears directly below the words `OS X`.
 
@@ -50,14 +50,14 @@ and choosing "Open" from the pop-up menu.
 
     The installer launches an introductory dialog, followed by an overview of what's installed.
 
-    ![Install Docker Toolbox](/mac/images/mac-welcome-page.png)
+    ![Install Docker Toolbox](images/mac-welcome-page.png)
 
 4. Press **Continue** to install the toolbox.
 
     The installer presents you with options to customize the standard
     installation.
 
-    ![Standard install](/mac/images/mac-page-two.png)
+    ![Standard install](images/mac-page-two.png)
 
     By default, the standard Docker Toolbox installation:
 
@@ -71,17 +71,17 @@ and choosing "Open" from the pop-up menu.
 
      The system prompts you for your password.
 
-     ![Password prompt](/mac/images/mac-password-prompt.png)
+     ![Password prompt](images/mac-password-prompt.png)
 
 6. Provide your password to continue with the installation.
 
      When it completes, the installer provides you with some shortcuts. You can ignore this for now and click **Continue**.
 
-     ![Quickstart](/mac/images/mac-page-quickstart.png)
+     ![Quickstart](images/mac-page-quickstart.png)
 
      Then click **Close** to finish the installer.
 
-     ![All finished](/mac/images/mac-page-finished.png)
+     ![All finished](images/mac-page-finished.png)
 
 
 ## Step 3: Verify your installation
@@ -97,7 +97,7 @@ Virtual Box VM, it maintains its configuration between uses.
 
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
-    ![Launchpad](/mac/images/applications_folder.png)
+    ![Launchpad](images/applications_folder.png)
 
 2. Click the icon to launch a Docker Quickstart Terminal window.
 
@@ -135,7 +135,7 @@ Virtual Box VM, it maintains its configuration between uses.
 
     If you aren't familiar with a terminal window, here are some quick tips.
 
-    ![Teriminal](/tutimg/terminal.png)
+    {{< figure src="/tutimg/terminal.png" >}}
 
     The prompt is traditionally a `$` dollar sign. You type commands into the
     *command line* which is the area after the prompt. Your cursor is indicated
@@ -186,7 +186,7 @@ Virtual Box VM, it maintains its configuration between uses.
 
 At this point, you have successfully installed Docker. Leave the Docker Quickstart Terminal
 window open. Now, go to the next page to [read a very short introduction Docker
-images and containers](/mac/step_two).
+images and containers](step_two.md).
 
 
 &nbsp;
