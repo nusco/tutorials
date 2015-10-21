@@ -75,7 +75,7 @@ weight = 1
 
 At this point, you have successfully installed Docker. Leave the terminal
 window open. Now, go to the next page to [read a very short introduction Docker
-images and containers](/linux/step_two).
+images and containers](step_two.md).
 
 
 &nbsp;

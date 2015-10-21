@@ -19,7 +19,7 @@ If you don't already have a terminal open, open one now:
 
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
-    ![Launchpad](/mac/images/applications_folder.png)
+    ![Launchpad](images/applications_folder.png)
 
 2. Click the icon to launch a Docker Quickstart Terminal.
 
@@ -47,7 +47,7 @@ If you don't already have a terminal open, open one now:
 
     The command you type looks like this:
 
-     ![tagger](/tutimg/tagger.png)
+     {{< figure src="/tutimg/tagger.png" >}}
 
     Of course, your account name will be your own. So, you type the command with
     your image's ID and your account name and press RETURN.
@@ -97,7 +97,7 @@ If you don't already have a terminal open, open one now:
 			
 10. Return to your profile on Docker Hub to see your new image.
 
-	 ![New image](/tutimg/new_image.png)
+	 {{< figure src="/tutimg/new_image.png" >}}
 	
 # Step 2: Pull your new image
 
@@ -194,7 +194,7 @@ You've done a lot, you've done all of the following fundamental Docker tasks.
 <a href="https://twitter.com/intent/tweet?button_hashtag=dockerdocs&text=Just%20ran%20a%20container%20with%20an%20image%20I%20built.%20Find%20it%20on%20%23dockerhub.%20Build%20your%20own%3A%20http%3A%2F%2Fgoo.gl%2FMUi7cA" class="twitter-hashtag-button" data-size="large" data-related="docker" target="_blank">Tweet your accomplishment!</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-You've only scratched the surface of what Docker can do. Go to the next page to [learn more](/mac/last_page).
+You've only scratched the surface of what Docker can do. Go to the next page to [learn more](last_page.md).
 
 
 &nbsp;

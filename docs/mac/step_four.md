@@ -27,7 +27,7 @@ If you don't already have a terminal open, open one now:
 
 1. Open the **Launchpad** and locate the Docker Quickstart Terminal icon.
 
-    ![Launchpad](/mac/images/applications_folder.png)
+    ![Launchpad](images/applications_folder.png)
 
 2. Click the icon to launch a Docker Quickstart Terminal.
 
@@ -58,20 +58,20 @@ If you don't already have a terminal open, open one now:
 
     Your Mac opens the TextEdit program with the empty Dockerfile.
 
-    ![Edit Dockerfile](/mac/images/text_edit.png)
+    ![Edit Dockerfile](images/text_edit.png)
 
 8. Type `FROM docker/whalesay:latest` line into the open file.
 
     Now, it should look like this.
 
-    ![Line one](/mac/images/line_one.png)
+    ![Line one](images/line_one.png)
 
 	  The `FROM` keyword tells Docker which image your image is based on. You
     are basing your new work on the existing `whalesay` image.
 
 9. Now, add the `fortunes` program to the image.
 
-	 ![Line two](/mac/images/line_two.png)
+	 ![Line two](images/line_two.png)
 
 	 The `fortunes` program has a command that prints out wise sayings for our
 	 whale to say. So, the first step is to install it. This line adds the
@@ -82,7 +82,7 @@ If you don't already have a terminal open, open one now:
 10. Once the image has the software it needs, you instruct the software to run
 when the image is loaded.
 
-	![Line two](/mac/images/line_three.png)
+	![Line two](images/line_three.png)
 
  	This line tells the `fortune` program to send its nifty quotes to the `cowsay` program.
 
@@ -228,7 +228,7 @@ built locally and is already available.
 On this page, you learned to build an image by writing your own Dockerfile.
 You ran your image in a container. You also just used Linux from your Mac yet
 again. In the next section, you take the first step in sharing your image by
-[creating a Docker Hub account](/mac/step_five).
+[creating a Docker Hub account](step_five.md).
 
 
 &nbsp;

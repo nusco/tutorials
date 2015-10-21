@@ -21,7 +21,7 @@ Your machine must be running Windows 7.1, 8/8.1 or newer to run Docker Toolbox. 
 
 1. Right click the windows message and choose **System*.
 
-    ![Which version](/windows/images/win_ver.png)
+    ![Which version](images/win_ver.png)
 
     If you aren't using a supported version, you could consider upgrading your
     operating system.
@@ -33,7 +33,7 @@ Your machine must be running Windows 7.1, 8/8.1 or newer to run Docker Toolbox. 
 	  Choose **Start > Task Manager** and navigate to the **Performance** tab.
 	  Under **CPU** you should see the following:
 
-      ![Release page](/windows/images/virtualization.png)
+      ![Release page](images/virtualization.png)
 
     If virtualization is not enabled on your system, follow the manufacturer's instructions for enabling it.
 
@@ -70,7 +70,7 @@ installer.
     change, choose **Yes**. The system displays the **Setup - Docker Toolbox for
     Windows** wizard.
 
-      ![Release page](/windows/images/installer_open.png)
+      ![Release page](images/installer_open.png)
 
 4. Press **Next** to accept all the defaults and then **Install**.
 
@@ -80,7 +80,7 @@ installer.
 
     When it completes, the installer reports it was successful:
 
-    ![Success](/windows/images/finish.png)
+    ![Success](images/finish.png)
 
 6. Uncheck "View Shortcuts in File Explorer" and press **Finish**.
 
@@ -92,7 +92,7 @@ In this step, you start Docker Toolbox and run a simple Docker command.
 
 1. On your Desktop, find the Docker Toolbox icon.
 
-    ![Desktop](/windows/images/icon-set.png)
+    ![Desktop](images/icon-set.png)
 
 2. Click the icon to launch a Docker Toolbox terminal.
 
@@ -100,7 +100,7 @@ In this step, you start Docker Toolbox and run a simple Docker command.
 
     The terminal does several things to set up Docker Toolbox for you. When it is done, the terminal displays the `$` prompt.
 
-     ![Desktop](/windows/images/b2d_shell.png)
+     ![Desktop](images/b2d_shell.png)
 
     The terminal runs a special `bash` environment instead of the standard Windows command prompt. The `bash` environment is required by Docker.
 
@@ -108,7 +108,7 @@ In this step, you start Docker Toolbox and run a simple Docker command.
 
     If you aren't familiar with a terminal window, here are some quick tips.
 
-    ![Teriminal](/tutimg/terminal.png)
+    {{< figure src="/tutimg/terminal.png" >}}
 
     The prompt is traditionally a `$` dollar sign. You type commands into the
     *command line* which is the area after the prompt. Your cursor is indicated
@@ -149,7 +149,7 @@ In this step, you start Docker Toolbox and run a simple Docker command.
 
 At this point, you have successfully installed Docker. Leave the Docker Toolbox
 window open. Go to the next page to [read a very short introduction to Docker
-images and containers](/windows/step_two).
+images and containers](step_two.md).
 
 
 &nbsp;

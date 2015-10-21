@@ -20,7 +20,7 @@ image up to it so other people with Docker can run it.
 
 	Your browser displays the page.
 
-	  ![Hub signup](/tutimg/hub_signup.png)
+	  {{< figure src="/tutimg/hub_signup.png" >}}
 
 2. Fill out the form on the signup page.
 
@@ -55,7 +55,7 @@ Before you can share anything on the hub, you need to verify your email address.
 
     When you are done, your form should look similar to the following:
 
-    ![Add repository](/tutimg/add_repository.png)
+    {{< figure src="/tutimg/add_repository.png" >}}
 
 6. Press **Create** when you are done.
 
@@ -65,7 +65,7 @@ Before you can share anything on the hub, you need to verify your email address.
 
 On this page, you opened an account on Docker Hub and created a new repository.
 In the next section, you populate the repository [by tagging and pushing the
-image you created earlier](/windows/step_six).
+image you created earlier](step_six.md).
 
 
 &nbsp;

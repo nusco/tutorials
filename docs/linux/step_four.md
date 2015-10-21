@@ -199,7 +199,7 @@ built locally and is already available.
 
 On this page, you learned to build an image by writing your own Dockerfile.
 You ran your image in a container. In the next section, you take the first step in sharing your image by
-[creating a Docker Hub account](/linux/step_five).
+[creating a Docker Hub account](step_five.md).
 
 
 &nbsp;
