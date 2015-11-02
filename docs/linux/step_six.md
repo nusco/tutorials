@@ -28,12 +28,12 @@ new image.
 
 3. Find the `IMAGE ID` for your `docker-whale` image.
 
-        In this example, the id is `7d9495d03763`.
+    In this example, the id is `7d9495d03763`.
 
-        You'll notice that currently, the `REPOSITORY` shows the repository but not
-        the namespace for `docker-whale`. You need to include the `namespace` for
-        Docker Hub to associate it with your account.  The `namespace` is the same as
-        your account name.
+    You'll notice that currently, the `REPOSITORY` shows the repository but not
+    the namespace for `docker-whale`. You need to include the `namespace` for
+    Docker Hub to associate it with your account.  The `namespace` is the same as
+    your account name.
 
 4. Use `IMAGE ID` and the `docker tag` command to tag your `docker-whale` image.
 

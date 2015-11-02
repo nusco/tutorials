@@ -77,9 +77,9 @@ People all over the world create Docker images. You can find these images by bro
                 \    \        __/
                   \____\______/
 
-        The first time you run a software image, the `docker` command looks for it
-        on your local system. If the image isn't there, then `docker` gets it from
-        the hub.
+    The first time you run a software image, the `docker` command looks for it
+    on your local system. If the image isn't there, then `docker` gets it from
+    the hub.
 
 3. While still in the terminal, type `docker images` command and press RETURN.
 
