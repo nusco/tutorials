@@ -101,7 +101,7 @@ If you don't already have the Docker Quickstart Terminal open, open one now:
         docker/whalesay      latest      fb434121fc77        3 hours ago        247 MB
         hello-world          latest      91c95931e552        5 weeks ago        910 B
     
-    When you run an image in a container, Docker downloads the image your
+    When you run an image in a container, Docker downloads the image to your
     computer. This local copy of the image saves you time.  Docker only
     downloads the image again if the image's source changes on the hub.  You
     can, of course, delete the image yourself. You'll learn more about that
