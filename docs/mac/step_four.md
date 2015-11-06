@@ -129,7 +129,7 @@ First Docker checks to make sure it has everything it needs to build.
     Sending build context to Docker daemon 158.8 MB
 
 Then, Docker loads with the `whalesay` image.	It already has this image
-locally as your might recall from the last page. So, Docker doesn't need to
+locally as you might recall from the last page. So, Docker doesn't need to
 download it.
 
     Step 0 : FROM docker/whalesay:latest
