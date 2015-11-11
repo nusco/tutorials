@@ -9,6 +9,12 @@ weight = 1
 
 # Install Docker
 
+This installation procedure is written for users who are unfamiliar with package
+managers. If you comfortable with package managers, prefer not to use `wget`, or
+have problems installing and want to troubleshoot, please use our `apt` and
+`yum` <a href="https://docs.docker.com/engine/installation/"
+target="_blank">repositories instead for your installation</a>.
+
 1. Log into your Ubuntu installation as a user with `sudo` privileges.
 
 2. Verify that you have `wget` installed.
