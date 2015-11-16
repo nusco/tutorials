@@ -70,12 +70,6 @@ target="_blank">repositories instead for your installation</a>.
         For more examples and ideas, visit:
          https://docs.docker.com/userguide/
 
-        To try something more ambitious, you can run an Ubuntu container with:
-         $ docker run -it ubuntu bash
-
-        For more examples and ideas, visit:
-         https://docs.docker.com/userguide/
-
 
 ## Where to go next
 
